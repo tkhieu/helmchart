@@ -123,18 +123,18 @@ parent:
           memory mode = save
 
         [plugins]
-          cgroups = no
-          tc = no
-          enable running new plugins = no
+          cgroups = yes
+          tc = yes
+          enable running new plugins = yes
           check for new plugins every = 72000
-          python.d = no
-          charts.d = no
-          go.d = no
-          node.d = no
-          apps = no
-          proc = no
-          idlejitter = no
-          diskspace = no
+          python.d = yes
+          charts.d = yes
+          go.d = yes
+          node.d = yes
+          apps = yes
+          proc = yes
+          idlejitter = yes
+          diskspace = yes
     stream:
       enabled: true
       path: /etc/netdata/stream.conf
@@ -176,9 +176,9 @@ parent:
           to: sysadmin
 
   claiming:
-    enabled: false
-    token: ""
-    rooms: ""
+    enabled: true
+    token: "w9osYUXq-K3ezzKspnLvUUJkxM52oUo2fCvXQK09AxkAST6ZIG4ilhcbUdmTIW5fZgqTsSQ0LRW21lvhNQD1vMtHZmuxZOWYG5J2z5A3WEDwCdy_e9RlHElVumywOZTEgdnkTVw"
+    rooms: "fd4be01b-d609-40ee-b929-61c6d6b09723"
     url: "https://app.netdata.cloud"
 
 child:
